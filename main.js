@@ -1,13 +1,17 @@
 // cards format app
 const body = document.querySelector('body');
+const UserNameContainer = document.getElementById('UserName');
+const UserName = 'Christian Daniel La Cruz'; //Se coloca esta variable para colocar el nombre de usuario. Se sacaria de una base de datos existentey y se colocaria en el h3
+UserNameContainer.textContent = `${UserName}`;
+//Cards Names
 const inputCard = document.getElementById('inputCard');
 const inputDate = document.getElementById('inputDate');
 const inputCVV = document.getElementById('inputCVV');
 
-const maskNumber = '####-####-####-####';
+const maskNumber = '####-####-####-###';
  //estrucutra de las cards predefinidas que se va a colocar
- const maskDate = '##/##';
- const maskCVV = '###';
+ const maskDate = '##/#';
+ const maskCVV = '##';
 
  //variable para almacenar las actualizaciones de numeros
  let current = '';
